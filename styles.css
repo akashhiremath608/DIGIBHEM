@@ -531,6 +531,10 @@ input[type="submit"]:hover {
     background-color: transparent;
   }
 
+  .header__container h1{
+    font-size:4rem;
+  }
+
   .booking__container form {
     max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
