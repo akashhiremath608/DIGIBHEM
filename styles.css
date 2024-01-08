@@ -465,6 +465,9 @@ input[type="submit"]:hover {
 }
 
 @media (width > 480px) {
+  .header__container h1{
+    font-size:4rem;
+  }
   .about__grid {
     grid-template-columns: repeat(2, 1fr);
   }
