@@ -175,7 +175,7 @@ nav {
       rgba(15, 26, 44, 0.5),
       rgba(15, 26, 44, 0.5)
     ),
-    url("../assets/background.webp");
+    url("assets/background.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
