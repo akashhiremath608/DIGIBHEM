@@ -6,8 +6,7 @@
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="booking.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="assets/logo.png" type="image/x-icon">
     <title>Hotel Booking</title>
   </head>
@@ -17,8 +16,8 @@
       <div class="nav__bar">
         <div class="nav__header">
           <div class="logo nav__logo">
-            <div>AH</div>
-            <span>HOTEL<br />AKASH</span>
+            <div>HB</div>
+            <span>HOTEL<br />Brand</span>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
@@ -28,15 +27,15 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#room">Room</a></li>
-          <li><a href="#booking">Book</a></li>
-          <li><a href="#menu">Contact</a></li>
+          <li><a href="booking.html">Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <header class="header" id="home">
       <div class="section__container header__container">
-        <p class="section__subheader">Akash Hotel's</p>
+        <p class="section__subheader">Brand Hotel's</p>
         <h1>The Perfect<br />Base For You</h1>
         <a href="#booking"><button class="btn">Book Now</button></a>
       </div>
@@ -48,6 +47,16 @@
       <br>
       <h2>ABOUT US</h2>
       <div class="section__container about__container">
+        <div class="about__content">
+          <p class="section__subheader">ABOUT US</p>
+          <h2 class="section__header">Discover Our Prime Stay</h2>
+          <p class="section__description">
+            Step into a hidden world where luxury, comfort, and adventure unite.
+            Our underground hotels offer an unmatched escape, 
+            beckoning you to discover a subterranean realm of extraordinary wonders.
+          </p>
+          <a href="#booking"><button class="btn-b">Book Now</button></a>
+        </div>
         <div class="about__grid">
           <div class="about__image">
             <img src="assets/about-1.jpg" alt="about" />
@@ -67,16 +76,6 @@
             <h4>Luxury Room</h4>
             <p>Experience Unrivaled luxury in our deluxe rooms.</p>
           </div>
-        </div>
-        <div class="about__content">
-          <p class="section__subheader">ABOUT US</p>
-          <h2 class="section__header">Discover Our Prime Stay</h2>
-          <p class="section__description">
-            Step into a hidden world where luxury, comfort, and adventure unite.
-            Our underground hotels offer an unmatched escape, 
-            beckoning you to discover a subterranean realm of extraordinary wonders.
-          </p>
-          <a href="#booking"><button class="btn-b">Book Now</button></a>
         </div>
       </div>
     </section>
@@ -122,72 +121,13 @@
       </div>
     </section>
 
-<!-------------------Booking---------------------------------->
-
-    <section class="booking" id="booking">
-      <h2>Hotel Booking Form</h2> <br>
-      <form id="bookingForm">
-        <h3>Customer Information:</h3>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="checkInDate">Check-in Date:</label>
-        <input type="date" id="checkInDate" name="checkInDate" required><br><br>
-        <label for="totalDays">Total Days:</label>
-        <input type="number" id="totalDays" name="totalDays" required><br><br>
-        <label for="advanceAmount">Advance Amount:</label>
-        <input type="number" id="advanceAmount" name="advanceAmount" required><br><br>
-        
-        <div class="container-flex">
-          <div>
-            <h3>Room Information:</h3>
-            <label for="roomType">Room Type:</label>
-            <select id="roomType" name="roomType">
-                <option value="Deluxe">Deluxe</option>
-                <option value="Suite">Suite</option>
-            </select> <br><br>
-          </div>
-          <div>
-            <h3>Amenities</h3>
-            <input type="checkbox" id="ac" name="amenities" value="AC">
-            <label for="ac">AC</label><br>
-            <input type="checkbox" id="locker" name="amenities" value="Locker">
-            <label for="locker">Locker</label><br><br><br>
-          </div>
-        </div>
-        
-        <div class="container-flex">
-          <div>
-            <h3>Room Rates:</h3>
-            <label for="deluxeRate">Deluxe Room Rate:</label>
-            <input type="number" id="deluxeRate" name="deluxeRate" placeholder="Ex: ₹1200"><br><br>
-            <label for="suiteRate">Suite Room Rate:</label>
-            <input type="number" id="suiteRate" name="suiteRate" placeholder="EX: ₹900"><br><br>
-            <label for="acCost">AC Cost:</label>
-            <input type="number" id="acCost" name="acCost"><br><br>
-            <label for="lockerCost">Locker Cost:</label>
-            <input type="number" id="lockerCost" name="lockerCost"><br><br>
-          </div>
-          <div>
-            <h3>Payment:</h3>
-            <label for="extraPersons">Extra Persons:</label>
-            <input type="number" id="extraPersons" name="extraPersons" placeholder="1 "><br><br>
-            <label for="totalCost">Total Cost:</label>
-            <input type="text" id="totalCost" name="totalCost" readonly><br><br>
-            <label for="balance">Balance:</label>
-            <input type="text" id="balance" name="balance" readonly><br><br>
-          </div>
-        </div>
-        <input class="btn" type="submit" value="SUBMIT">
-      </form>
-    </section><br>
-
 <!------------------------Footer----------------------------------->    
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
           <div class="logo footer__logo">
-            <div>AH</div>
-            <span>HOTEL<br />AKASH</span>
+            <div>HB</div>
+            <span>HOTEL<br />Brand</span>
           </div>
           <p class="section__description">
             Step into a hidden world where luxury, comfort, and adventure unite.
@@ -196,10 +136,10 @@
           </p>
           <ul class="footer__socials">
             <li>
-              <a href="https://github.com/akashhiremath608"><i class="ri-github-fill"></i></a>
+              <a href="#"><i class="ri-github-fill"></i></a>
             </li>
             <li>
-              <a href="linkedin.com/in/akashhiremath44"><i class="ri-linkedin-fill"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
             </li>
             <li>
               <a href="#"><i class="ri-instagram-line"></i></a>
@@ -233,7 +173,7 @@
               <span><i class="ri-record-mail-line"></i></span>
               <div>
                 <h5>Email</h5>
-                <p>akashhiremath@gmail.com</p>
+                <p>Akashhiremath@gmail.com</p>
               </div>
             </li>
             <li>

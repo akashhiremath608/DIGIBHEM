@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+     <!------------------Nav Bar----------------------------->
+     <nav>
+        <div class="nav__bar">
+          <div class="nav__header">
+            <div class="logo nav__logo">
+              <div>HB</div>
+              <span>HOTEL<br />Brand</span>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#room">Room</a></li>
+            <li><a href="#">Book</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <header class="header" id="home">
+        <section class="booking" id="booking">
+            <h2>Hotel Booking Form</h2> <br>
+            <form id="bookingForm">
+              <h3>Customer Information:</h3>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br><br>
+              <label for="checkInDate">Check-in Date:</label>
+              <input type="date" id="checkInDate" name="checkInDate" required><br><br>
+              <label for="totalDays">Total Days:</label>
+              <input type="number" id="totalDays" name="totalDays" required><br><br>
+              <label for="advanceAmount">Advance Amount:</label>
+              <input type="number" id="advanceAmount" name="advanceAmount" required><br><br>
+              
+              <div class="container-flex">
+                <div>
+                  <h3>Room Information:</h3>
+                  <label for="roomType">Room Type:</label>
+                  <select id="roomType" name="roomType">
+                      <option value="Deluxe">Deluxe</option>
+                      <option value="Suite">Suite</option>
+                  </select> <br><br>
+                </div>
+                <div>
+                  <h3>Amenities</h3>
+                  <input type="checkbox" id="ac" name="amenities" value="AC">
+                  <label for="ac">AC</label><br>
+                  <input type="checkbox" id="locker" name="amenities" value="Locker">
+                  <label for="locker">Locker</label><br><br><br>
+                </div>
+              </div>
+              
+              <div class="container-flex">
+                <div>
+                  <h3>Room Rates:</h3>
+                  <label for="deluxeRate">Deluxe Room Rate:</label>
+                  <input type="number" id="deluxeRate" name="deluxeRate" placeholder="Ex: ₹1200"><br><br>
+                  <label for="suiteRate">Suite Room Rate:</label>
+                  <input type="number" id="suiteRate" name="suiteRate" placeholder="EX: ₹900"><br><br>
+                  <label for="acCost">AC Cost:</label>
+                  <input type="number" id="acCost" name="acCost"><br><br>
+                  <label for="lockerCost">Locker Cost:</label>
+                  <input type="number" id="lockerCost" name="lockerCost"><br><br>
+                </div>
+                <div>
+                  <h3>Payment:</h3>
+                  <label for="extraPersons">Extra Persons:</label>
+                  <input type="number" id="extraPersons" name="extraPersons" placeholder="1 "><br><br>
+                  <label for="totalCost">Total Cost:</label>
+                  <input type="text" id="totalCost" name="totalCost" readonly><br><br>
+                  <label for="balance">Balance:</label>
+                  <input type="text" id="balance" name="balance" readonly><br><br>
+                </div>
+              </div>
+              <input class="btn" type="submit" value="SUBMIT">
+            </form>
+          </section>
+      </header>
+    
+      <!------------------------Footer----------------------------------->    
+    <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="logo footer__logo">
+              <div>HB</div>
+              <span>HOTEL<br />Brand</span>
+            </div>
+            <p class="section__description">
+              Step into a hidden world where luxury, comfort, and adventure unite.
+              Our underground hotels offer an unmatched escape, 
+              beckoning you to discover a subterranean realm of extraordinary wonders.
+            </p>
+            <ul class="footer__socials">
+              <li>
+                <a href="#"><i class="ri-github-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Services</h4>
+            <div class="footer__links">
+              <li><a href="#">Online Booking</a></li>
+              <li><a href="#">Room Customization</a></li>
+              <li><a href="#">Virtual Tours</a></li>
+              <li><a href="#">Special Offers</a></li>
+              <li><a href="#">Customer Support</a></li>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Contact Us</h4>
+            <div class="footer__links">
+              <li>
+                <span><i class="ri-phone-fill"></i></span>
+                <div>
+                  <h5>Phone Number</h5>
+                  <p>+91 000 777 5555</p>
+                </div>
+              </li>
+              <li>
+                <span><i class="ri-record-mail-line"></i></span>
+                <div>
+                  <h5>Email</h5>
+                  <p>Akashhiremath@gmail.com</p>
+                </div>
+              </li>
+              <li>
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                <div>
+                  <h5>Location</h5>
+                  <p>Bengaluru, Karnataka</p>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2023 Web Design Akash Hiremath. All rights reserved.
+        </div>
+      </footer>
+
+    
+
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="main.js"></script>
+
+    <script>
+        const bookingForm = document.getElementById('bookingForm');
+        const totalCostField = document.getElementById('totalCost');
+        const balanceField = document.getElementById('balance');
+
+        function calculateCost() {
+            const totalDays = parseFloat(document.getElementById('totalDays').value);
+            const advanceAmount = parseFloat(document.getElementById('advanceAmount').value);
+            const deluxeRate = parseFloat(document.getElementById('deluxeRate').value) || 0;
+            const suiteRate = parseFloat(document.getElementById('suiteRate').value) || 0;
+            const acCost = parseFloat(document.getElementById('acCost').value) || 0;
+            const lockerCost = parseFloat(document.getElementById('lockerCost').value) || 0;
+            const extraPersons = parseFloat(document.getElementById('extraPersons').value) || 0;
+
+            const roomType = document.getElementById('roomType').value;
+            const roomRate = roomType === 'Deluxe' ? deluxeRate : suiteRate;
+            const totalRoomCost = totalDays * roomRate;
+            const amenitiesCost = acCost + lockerCost;
+            const extraPersonCharges = extraPersons * 1000 * totalDays;
+            const totalCost = totalRoomCost + amenitiesCost + extraPersonCharges;
+            const balance = totalCost - advanceAmount;
+
+            totalCostField.value = `₹${totalCost.toFixed(2)}`;
+            balanceField.value = `₹${balance.toFixed(2)}`;
+            }
+
+            bookingForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                calculateCost();
+                this.reset();
+                alert('Successfully booked, We will get you soon')
+            });
+
+            // Trigger calculation on any input change
+            bookingForm.addEventListener('input', calculateCost);
+    </script>
+</body>
+</html>
